@@ -1,0 +1,13 @@
+# Configura o botão "Sponsor" no topo do repositório.
+# Tudo abaixo está comentado: descomente e preencha apenas as plataformas que você usa.
+# Documentação: https://docs.github.com/pt/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository
+#
+# github: [seu-usuario]                 # GitHub Sponsors (até 4 usuários: [usuario1, usuario2])
+# patreon: seu-usuario
+# open_collective: seu-projeto
+# ko_fi: seu-usuario
+# liberapay: seu-usuario
+# buy_me_a_coffee: seu-usuario
+# polar: seu-usuario
+# tidelift: npm/nome-do-pacote          # plataforma/nome-do-pacote
+# custom: ["https://example.com/apoie"] # até 4 links, como uma página com sua chave Pix

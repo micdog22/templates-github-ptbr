@@ -1,0 +1,31 @@
+name: Dúvida
+description: "Tire uma dúvida sobre como usar o {{NOME_DO_PROJETO}}"
+title: "[Dúvida]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de perguntar, dê uma olhada no README e na documentação: pode ser que a resposta já esteja lá. Para conversas mais abertas, prefira as Discussões, se estiverem ativadas.
+  - type: textarea
+    id: pergunta
+    attributes:
+      label: Qual é a sua dúvida?
+      description: Explique o que você está tentando fazer e em que ponto travou.
+    validations:
+      required: true
+  - type: textarea
+    id: tentativas
+    attributes:
+      label: O que você já tentou?
+      description: Comandos, trechos de código ou páginas da documentação que você já consultou.
+    validations:
+      required: false
+  - type: input
+    id: versao
+    attributes:
+      label: Versão
+      description: "Versão do {{NOME_DO_PROJETO}} que você está usando, se souber."
+      placeholder: "1.2.0"
+    validations:
+      required: false

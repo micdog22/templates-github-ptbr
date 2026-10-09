@@ -1,0 +1,91 @@
+name: Relatar bug
+description: "Algo não funciona como deveria no {{NOME_DO_PROJETO}}"
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reservar um tempo para relatar este problema! Antes de enviar, confira se já não existe uma issue aberta sobre o mesmo assunto.
+
+        **Encontrou uma falha de segurança?** Não abra uma issue pública. Siga as instruções da política de segurança (arquivo SECURITY.md ou aba **Security** do repositório).
+  - type: textarea
+    id: descricao
+    attributes:
+      label: O que aconteceu?
+      description: Descreva o problema com o máximo de clareza possível.
+      placeholder: Ao clicar em "Salvar", aparece uma mensagem de erro e nada é gravado.
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos para reproduzir
+      description: Liste o passo a passo para que a gente consiga ver o mesmo problema.
+      placeholder: |
+        1. Acesse a página "..."
+        2. Clique em "..."
+        3. Veja o erro
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que você esperava que acontecesse?
+    validations:
+      required: true
+  - type: input
+    id: versao
+    attributes:
+      label: Versão
+      description: "Qual versão do {{NOME_DO_PROJETO}} você está usando?"
+      placeholder: "1.2.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: sistema
+    attributes:
+      label: Sistema operacional
+      description: Marque todos em que o problema acontece.
+      multiple: true
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Android
+        - iOS
+        - Outro
+    validations:
+      required: false
+  - type: textarea
+    id: ambiente
+    attributes:
+      label: Ambiente
+      description: Navegador, versão da linguagem, banco de dados ou qualquer detalhe que ajude a reproduzir.
+      placeholder: Chrome 130, Node.js 20, PostgreSQL 16
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs ou mensagens de erro
+      description: Cole aqui os trechos relevantes. Eles serão formatados como código automaticamente, então não precisa usar crases.
+      render: shell
+    validations:
+      required: false
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Informações adicionais
+      description: Capturas de tela, links ou qualquer outro contexto. Dá para arrastar imagens para este campo.
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirmacoes
+    attributes:
+      label: Antes de enviar
+      options:
+        - label: Procurei nas issues existentes e não encontrei este problema.
+          required: true
+        - label: "Concordo em seguir o Código de Conduta do {{NOME_DO_PROJETO}}."
+          required: true

@@ -1,0 +1,55 @@
+name: Sugerir melhoria
+description: "Proponha uma ideia ou um novo recurso para o {{NOME_DO_PROJETO}}"
+title: "[Sugestão]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Que bom que você quer ajudar a melhorar o projeto! Quanto mais contexto você der, mais fácil fica avaliar a ideia.
+  - type: textarea
+    id: problema
+    attributes:
+      label: Qual problema esta melhoria resolve?
+      description: Conte em que situação você sentiu falta disso.
+      placeholder: Sempre que preciso exportar os dados, tenho que copiar tudo à mão...
+    validations:
+      required: true
+  - type: textarea
+    id: solucao
+    attributes:
+      label: Solução proposta
+      description: Como você imagina que deveria funcionar?
+    validations:
+      required: true
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas consideradas
+      description: Outras soluções ou contornos que você já tentou.
+    validations:
+      required: false
+  - type: dropdown
+    id: importancia
+    attributes:
+      label: Qual a importância disso para você?
+      options:
+        - Seria bom ter
+        - Importante
+        - Essencial, estou travado sem isso
+    validations:
+      required: true
+  - type: checkboxes
+    id: ajuda
+    attributes:
+      label: Quer ajudar?
+      options:
+        - label: Posso ajudar a implementar esta melhoria com um pull request.
+          required: false
+  - type: checkboxes
+    id: confirmacoes
+    attributes:
+      label: Antes de enviar
+      options:
+        - label: Procurei nas issues existentes e não encontrei uma sugestão parecida.
+          required: true

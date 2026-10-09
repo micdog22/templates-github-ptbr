@@ -1,0 +1,11 @@
+# Tela de escolha de modelo que aparece ao clicar em "New issue".
+# Com blank_issues_enabled: false, quem abre uma issue precisa usar um dos formulários.
+blank_issues_enabled: false
+contact_links:
+  # Remova este link se as Discussões não estiverem ativadas no repositório.
+  - name: Discussões
+    url: "{{URL_DO_REPOSITORIO}}/discussions"
+    about: "Para ideias, conversas e perguntas gerais sobre o {{NOME_DO_PROJETO}}."
+  - name: Relatar vulnerabilidade de segurança
+    url: "{{URL_DO_REPOSITORIO}}/security/advisories/new"
+    about: "Não abra issues públicas sobre falhas de segurança: use o relato privado de vulnerabilidades."
