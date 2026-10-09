@@ -1,4 +1,4 @@
-# Templates GitHub em Português — issues, PRs e documentos de comunidade prontos para usar
+# Templates GitHub em Português: issues, PRs e documentos de comunidade prontos para usar
 
 Um repositório bem cuidado tem formulários de issue que pedem as informações certas, um modelo de pull request, guia de contribuição, código de conduta e política de segurança. Escrever tudo isso do zero dá trabalho, e quase todo material pronto está em inglês.
 
@@ -100,4 +100,4 @@ Issues e pull requests são bem-vindos, inclusive com sugestões de texto.
 
 ## Licença
 
-MIT — veja [LICENSE](LICENSE).
+MIT. Veja [LICENSE](LICENSE).
